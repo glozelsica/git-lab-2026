@@ -1,17 +1,22 @@
 import random
 
-# Поэлементное заполнение списка
+# Поэлементное заполнение списка (УЛУЧШЕННАЯ ВЕРСИЯ)
 count = 14
 min_val = 5
 max_val = 400
 numbers = []
 
-print("Генерация списка случайных чисел:")
+print("=" * 40)
+print("ГЕНЕРАТОР СПИСКА ЧИСЕЛ")
+print("=" * 40)
+
 for i in range(count):
     numbers.append(random.randint(min_val, max_val))
-    print(f"  Элемент {i+1}: {numbers[-1]}")
+    print(f"  Элемент {i+1:2d}: {numbers[-1]:3d}")
 
-print(f"\nИтоговый список из {count} элементов:")
-print(numbers)
-print(f"Минимальное значение в списке: {min(numbers)}")
-print(f"Максимальное значение в списке: {max(numbers)}")
+print("=" * 40)
+print(f"ИТОГО: {count} элементов")
+print(f"Список: {numbers}")
+print(f"Мин: {min(numbers)}, Макс: {max(numbers)}")
+print("=" * 40)
+
