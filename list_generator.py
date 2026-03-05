@@ -7,3 +7,4 @@ def generate_list(count, min_val, max_val):
 # Пример использования
 numbers = generate_list(14, 5, 400)
 print(numbers)
+# This is a comment
