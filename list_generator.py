@@ -1,5 +1,6 @@
 import random
 
+<<<<<<< HEAD
 # ВАРИАНТ 1: Функциональный подход
 def generate_list(count, min_val, max_val):
     """Генерация списка через функцию"""
@@ -51,3 +52,12 @@ print(f"Длина списка (функция): {len(numbers1)}")
 print(f"Длина списка (цикл): {len(numbers2)}")
 print(f"Списки {'совпадают' if numbers1 == numbers2 else 'различаются'}")
 
+=======
+def generate_list(count, min_val, max_val):
+    """Генерация списка через функцию"""
+    return [random.randint(min_val, max_val) for _ in range(count)]
+
+# Пример использования
+numbers = generate_list(14, 5, 400)
+print(numbers)
+>>>>>>> parent of 04dc6ad (,Добавление кода 2)
