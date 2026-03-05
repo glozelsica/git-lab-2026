@@ -1,9 +1,12 @@
 import random
 
-def generate_list(count, min_val, max_val):
-    """Генерация списка через функцию"""
-    return [random.randint(min_val, max_val) for _ in range(count)]
+# Поэлементное заполнение списка
+count = 14
+min_val = 5
+max_val = 400
+numbers = []
 
-# Пример использования
-numbers = generate_list(14, 5, 400)
+for i in range(count):
+    numbers.append(random.randint(min_val, max_val))
+
 print(numbers)
